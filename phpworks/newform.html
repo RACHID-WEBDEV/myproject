@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>new form</title>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      
+        <!------ Include the above in your HEAD tag ---------->
+        
+       
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style>
+        .main{
+ 	padding: 40px 0;
+}
+.main input,
+.main input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 400px;
+    padding: 10px 40px;
+	background:#009edf;
+	    color: #FFF;
+    text-shadow: none;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+    </style>
+</head>
+
+<body>
+    	<div class="container">
+			<div class="main">
+				<div class="main-center">
+				<h3>Form Validation for Boldlinks student Sign Up!.</h3>
+					<form class="" method="post" action="newform.php">
+						
+						<div class="form-group">
+							<label for="name">Your Name</label>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+				<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Your Email</label>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" placeholder="Enter your Email"/>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username">Username</label>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="username" placeholder="Enter your Username"/>
+								</div>
+						</div>
+
+						<div class="form-group"> 
+							<label for="password">Password</label>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" placeholder="Enter your Password"/>
+								</div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm">Confirm Password</label>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="confirm" placeholder="Confirm your Password"/>
+								</div>
+						</div>
+                        <br />
+				<button type="submit" name="submit">SUBMIT</button>
+						
+					</form>
+				</div><!--main-center"-->
+			</div><!--main-->
+		</div><!--container-->
+
+<br /> <br />
+<select class="custom-select">
+  <label>pick option</label>
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<br /><br />
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-auto my-1">
+      <div class="custom-control custom-checkbox mr-sm-2">
+        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+      </div>
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
